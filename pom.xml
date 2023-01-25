@@ -6,7 +6,7 @@
 
   <groupId>nl.knaw.huc</groupId>
   <artifactId>rdf4j-rio-nquadsnd</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
 
   <properties>
     <maven.compiler.source>11</maven.compiler.source>
@@ -18,7 +18,7 @@
     <dependency>
       <groupId>org.eclipse.rdf4j</groupId>
       <artifactId>rdf4j-rio-nquads</artifactId>
-      <version>4.1.2</version>
+      <version>4.2.2</version>
     </dependency>
   </dependencies>
 

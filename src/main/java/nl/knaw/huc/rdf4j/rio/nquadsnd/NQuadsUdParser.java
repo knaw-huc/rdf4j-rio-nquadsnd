@@ -96,10 +96,13 @@ public class NQuadsUdParser extends NQuadsParser {
                     ? valueFactory.createStatement(subject, predicate, object)
                     : valueFactory.createStatement(subject, predicate, object, context);
 
-            rdfHandler.handleStatement(statement);
+
             if (rdfHandler instanceof RDFAssertionHandler) {
                 RDFAssertionHandler rdfAssertionHandler = (RDFAssertionHandler) rdfHandler;
                 rdfAssertionHandler.handleStatement(isAssertion, statement);
+            }
+            else {
+                rdfHandler.handleStatement(statement);
             }
         }
         subject = null;
